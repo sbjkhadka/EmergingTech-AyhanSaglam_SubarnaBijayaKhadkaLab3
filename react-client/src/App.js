@@ -21,15 +21,31 @@ function App() {
   return (
     <div>
       <Router>
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="dark" expand="lg">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="/login">Login</Nav.Link>
-              <Nav.Link href="/list">List of Students</Nav.Link>
-              <Nav.Link href="/create">Sign Up</Nav.Link>
-              <Nav.Link href="/createCourse">Create Course</Nav.Link>
-              <Nav.Link href="/listCourses">List Courses</Nav.Link>
+              <Nav.Link href="/login" className="text-light">
+                Login
+              </Nav.Link>
+              <Nav.Link href="/list" className="text-light">
+                List of Students
+              </Nav.Link>
+              <Nav.Link href="/create" className="text-light">
+                Sign Up
+              </Nav.Link>
+              <Nav.Link
+                href="/createCourse"
+                className="text-light"
+              >
+                Create Course
+              </Nav.Link>
+              <Nav.Link
+                href="/listCourses"
+                className="text-light"
+              >
+                List Courses
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
